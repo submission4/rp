@@ -1,0 +1,112 @@
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #082f1f;
+  height: 8%;
+  padding: 0%;
+  overflow: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #b3e3c0;
+}
+/* Navigation links */
+.navbar a {
+  color: white;
+  box-shadow: #092220 0px 3px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  width: 33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #91e8bf;
+  box-shadow: #092220 0px 0px 10px;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #04AA6D;
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+
+.hidden-menu {
+  position: fixed;
+  top: 100;
+  left: -249px; /* Slide off-screen */
+  width: 250px; /* Adjust menu width */
+  height: 100%;
+  background-color: #97b5b3; 
+  transition: left 1s ease-in-out; 
+  z-index: 9999; /* Ensure menu is on top */
+}
+
+.open-menu{
+  transition: ease-in-out 2s left;
+  left: 0; /* Slide into view */
+  z-index: 9999; /* Ensure menu is on top */
+}
+
+.hidden-menu-two {
+  position: fixed;
+  top: 100;
+  right: -249px; /* Slide off-screen */
+  width: 250px; /* Adjst menu width */
+  height: 90%;
+  margin-bottom: 50px;
+  background-color: #ffffff; 
+  transition: right 1s ease-in-out; 
+  z-index: 9999; /* Ensure menu is on top */
+}
+
+.open-menu-two{
+  transition: ease-in-out 2s right;
+  right: 0; /* Slide into view */
+  z-index: 9999; /* Ensure menu is on top */
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 50%;
+    text-align: center; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #092220;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  box-shadow: darkslategrey;
+  margin-top: 100px;
+}
+h4{
+  text-align: left;
+  font-size: 42px;
+  color: #179210;
+}
+h2{
+  text-align: left;
+  font-size: 32px;
+  color: #921076;
+}
+h3 {
+  text-align: left;
+  font-size: 29px;
+  color: #0f5987;
+}

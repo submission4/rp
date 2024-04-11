@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Chat</h1>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message">
+                <p>Hi there!</p>
+            </div>
+            <div class="chat-message">
+                <p>How can I help you today?</p>
+            </div>
+        </div>
+        <form class="chat-form" onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Type your message here..." id="message">
+            <button type="submit" id="send">Send</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js">  </script>
+<script type="module" src="/static/js/chat.js"></script>
+{% endblock %}
+
+
+
+{% block roleplay %}
+    <p>Roleplay Guide:</p>
+{% endblock %}
+
+{% block score %}
+    <p>Score: 100</p>
+{% endblock %}
+

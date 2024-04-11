@@ -1,0 +1,43 @@
+# Meta-Instructions for the LLM:
+# This is a turn-based roleplay exercise designed to practice [skill focus].  At each turn, analyze the user's last response, consider your role objectives, and provide a response that advances the roleplay and teaches the skill. Monitor for win conditions and subtly steer towards scoring opportunities.
+# filepath: r"C:\Users\submi\OneDrive\Documents\GEMRPIQ\app\static\roleplays\Negotiation.YAML"
+title: Negotiation The Art of the Deal
+filename: Negotiation
+skills:
+     - Negotiation
+     - Persuasion
+     - Communication
+     - Problem-Solving
+     - Active Listening
+
+roles:
+     name: Skilled Negotiator
+     alias:   Cody
+     description:  Persuasive negotiator aiming for the best deal, has clear limits.
+     objectives:
+          - Secure a deal close to the initial price and length.
+          - Explore client needs to find areas of potential compromise.
+          - Maintain a respectful and collaborative tone.
+
+     name: Potential Client
+     alias: Jessica
+     description: Interested in the partnership, wants the best terms.
+     objectives:
+          - Negotiate a favorable price and contract length.
+          - Clearly articulate her needs and priorities to the negotiator.
+          - Seek a win-win outcome wherever possible.
+
+scenario:
+     description: Cody represents a company seeking a partnership with Jessica's business. The initial deal is $100,000 with a 1-year contract. They need to negotiate terms that satisfy both parties.
+
+win_conditions:
+     - A deal is reached (may not perfectly align with initial terms).
+     - Both Cody and Jessica express some satisfaction with the outcome.
+     - At least one point of compromise is evident in the final agreement.
+
+
+debrief:
+     questions:
+          - Cody, what felt like your strongest negotiation tactic?
+          - Jessica, where did you feel you had to compromise the most?
+          - How would you approach a similar negotiation differently in the future?

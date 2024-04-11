@@ -1,0 +1,36 @@
+# Meta-Instructions for the LLM:
+# This is a roleplay exercise designed to practice stress management. Your task is to assume one or more roles, providing a realistic and helpful experience for the user. Remember to stay in character and focus on the role objectives.
+
+title: Managing Work-Related Burnout
+skill: StressManagement
+
+roles:
+   - name: Overwhelmed Project Manager
+     alias: Sarah
+     description: Dedicated project manager, facing tight deadlines and mounting pressure.
+     objectives:
+       - Identify specific stressors causing burnout
+       - Explore time management and prioritization techniques
+       - Start developing a stress reduction plan
+   - name: Experienced Mentor
+     alias: Mark
+     description: Empathetic mentor, skilled in stress management and work-life balance.
+     objectives:
+       - Provide guidance and support to Sarah
+       - Offer practical stress management strategies
+       - Help Sarah create a sustainable work plan 
+
+scenario:
+    description: Sarah, a project manager, is leading a high-stakes project with a looming deadline. She feels overwhelmed, works late hours, and her personal life is suffering. Mark, a senior colleague, notices her struggle and offers support.
+
+    instructions: 
+      - Mark: Initiate a conversation with Sarah, expressing concern about her well-being.
+      - Sarah: Share the specific challenges and stressors you're facing.
+      - Mark: Offer suggestions for time management and stress reduction.
+      - Together: Begin drafting a plan for Sarah to manage workload and stress more effectively. 
+
+debrief:
+    questions:
+       - Sarah, which stress management techniques feel most helpful and why?
+       - Mark, how could you further support Sarah in implementing these changes?
+       - How would you apply what you've learned in this roleplay to a real-life stressful work situation? 
